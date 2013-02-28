@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'item_id', 1 => 'tag_id', '_autoinc' => false, '_type' => array ( 'item_id' => 'int(10)', 'tag_id' => 'int(10)', ), );?>

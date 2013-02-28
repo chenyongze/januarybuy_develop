@@ -1,0 +1,19 @@
+<include file="public:header"/>
+<section class="section">
+	<form action="{:u('index/finish')}" method="POST" id="post_form">
+		<div class="step">
+			<ul>
+				<li class="on"><em>1</em>{$Think.lang.step_check}</li>
+				<li class="on"><em>2</em>{$Think.lang.step_setconf}</li>
+				<li class="current"><em>3</em>{$Think.lang.step_finish_desc}</li>
+			</ul>
+		</div>
+		<div class="server">
+			<iframe name="show_process" id="show_process" src="?a=show_process" frameborder="false" scrolling="auto" style="overflow-x:hidden;border:none;" width="100%" height="420px" allowtransparency="true"></iframe>
+		</div>
+		<div class="bottom tac">
+			<input type="submit" name="dosubmit" id="submit_button"  value="{$Think.lang.next}" class="btn" />
+		</div>
+	</form>
+</section>
+<include file="public:footer"/>

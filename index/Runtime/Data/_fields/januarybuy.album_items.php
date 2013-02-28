@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'items_id', 2 => 'pid', 3 => 'remark', 4 => 'add_time', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(10)', 'items_id' => 'int(10)', 'pid' => 'int(10)', 'remark' => 'varchar(255)', 'add_time' => 'int(10)', ), );?>

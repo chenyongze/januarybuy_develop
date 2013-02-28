@@ -1,0 +1,26 @@
+<include file="public:header"/>
+<section class="section">
+	<div class="step">
+		<ul>
+			<li class="current"><em>1</em>{$Think.lang.step_check}</li>
+			<li class="on"><em>2</em>{$Think.lang.step_setconf}</li>
+			<li><em>3</em>{$Think.lang.step_finish_desc}</li>
+		</ul>
+	</div>
+	
+	<form action="{:u('index/check')}" method="POST" id="post_form">
+		<div class="server">
+			<volist name="error" id="val">
+		    	<div class="error_msg">{$val}</div>
+		    </volist>
+		    <div class="bottom tac">
+				<present name="error">
+	            	<input type="submit" class="btn" value="{$Think.lang.recheck}"/>
+	            <else/>
+	            	<input type="submit" name="dosubmit" id="submit_button"  value="{$Think.lang.next}" class="btn" />
+	            </present>
+			</div>
+		</div>
+	</form>
+</section>
+<include file="public:footer"/>
